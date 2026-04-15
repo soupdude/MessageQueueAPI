@@ -50,4 +50,20 @@ public class Notification {
     public String getType() {
         return type;
     }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setRecipient(String recipient) {
+        this.recipient = recipient;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
 }
