@@ -1,0 +1,14 @@
+services:
+  PostgreSQL:
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=mydb
+  RabbitMQ:
+    image: rabbitmq:3-management
+    ports:
+      - 5672:5672
+      - 15672:15672
